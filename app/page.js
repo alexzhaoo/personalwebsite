@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
 
 export default function Home() {
   return (
@@ -20,15 +22,16 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-5'>
-            <h2 className='text-purple-600 text-5xl py-2 '>Alexander Zhao</h2>
-            <h3 className='text-black '>Software and Machine Learning Developer | Computer Science Student</h3>
-            <p className = 'text-black'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
+            <h2 className='text-purple-600 text-5xl py-2 font-medium '>Alexander Zhao</h2>
+            <h3 className='text-black text-2xl py-2 '>Fullstack and Machine Learning Developer | Computer Science Student</h3>
+            <p className = 'text-gray-800 text-md py-5 leading-8 '>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
           </div>
-          <div className='text-black'>
+          <div className='text-gray-600 text-3xl flex justify-center gap-10'>
             <AiFillTwitterCircle/>
             <AiFillInstagram/>
             <AiFillLinkedin/>
           </div>
+          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mx-auto mt-20'><Image src= {deved} /></div>
         </section>
       </main>
 
