@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import intro from "../public/intro.png";
 
 export default function Home() {
   return (
@@ -31,7 +31,18 @@ export default function Home() {
             <AiFillInstagram/>
             <AiFillLinkedin/>
           </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mx-auto mt-20'><Image src= {deved} /></div>
+          <div className='mx-auto my-10 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-72 h-50 overflow-hidden '>
+          <Image
+           src= {intro} 
+           alt='Image'
+           className='mr-8'/>
+           </div>
+        </section>
+        <section className="min-h-screen">
+          <div className='text-black '>
+            <h3 className='-mt-24 text-2xl py-1'>My Journey as a Developer</h3>
+            <p></p>
+          </div>
         </section>
       </main>
 
