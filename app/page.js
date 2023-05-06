@@ -21,13 +21,26 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className='py-7 flex justify-between bg-cyan-800 w-full fixed dark:bg-gray-300' >
             <h1 className='text-2xl text-cyan-500 font-burton px-9'>Developed by Alex</h1>
-            <ul className='flex items-center mr-8'>
-              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-white dark:text-black mr-8' /></li>
-              <li><a className = 'bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md ' href="https://drive.google.com/file/d/1_jNZNPKrMCj4XdgVHAviRhQO3RX8lrPm/view?usp=share_link" target='_blank' rel="noopener noreferrer" >Resume</a></li>
+            <ul className='flex items-center mr-8 '>
+              <li>
+              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-white dark:text-black mr-8 hover:-translate-y-1' />
+              </li>
+              <li className=' mx-5 hover:-translate-y-1'>
+              <a >Home</a>
+              </li>
+              <li className=' mx-5 hover:-translate-y-1'>
+              <a >About</a>
+              </li>
+              <li className='mx-5 hover:-translate-y-1'>
+              <a>Projects</a>
+              </li>
+              <li className='mx-5 hover:-translate-y-1'>
+              <a className = 'bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md' href="https://drive.google.com/file/d/1_jNZNPKrMCj4XdgVHAviRhQO3RX8lrPm/view?usp=share_link" target='_blank' rel="noopener noreferrer" >Resume</a>
+              </li>
             </ul>
           </nav>
           <div className='text-center p-5 py-36'>
-            <h2 className='text-cyan-200 text-5xl py-2 font-medium '>Alexander Zhao</h2>
+            <h2 className='text-black text-5xl py-2 font-medium '>Alexander Zhao</h2>
             <h3 className='text-black text-2xl py-2 dark:text-white'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
             <p className = 'text-gray-800 text-md py-5 leading-8 dark:text-white'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
           </div>
@@ -36,7 +49,7 @@ export default function Home() {
             <AiFillTwitterCircle className="text-blue-400 hover:rounded-full hover:shadow hover:shadow-blue-500" />
             </a>        
             <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank"className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
-            <AiFillInstagram className='hover:shadow hover:shadow-purple-500 hover:rounded-xl text-purple-500'/>
+            <AiFillInstagram className='hover:shadow hover:shadow-black hover:rounded-xl text-gray-500'/>
             </a>
             <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target = "_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1' >
             <AiFillLinkedin className='hover:shadow hover:shadow-blue-700 rounded-md text-blue-700'/>
