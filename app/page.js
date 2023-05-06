@@ -23,7 +23,7 @@ export default function Home() {
             <h1 className='text-2xl text-cyan-500 font-burton px-9'>Developed by Alex</h1>
             <ul className='flex items-center mr-8'>
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-white dark:text-black mr-8' /></li>
-              <li><a className = 'bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md ' href="" target='_blank' rel="noopener noreferrer" >Resume</a></li>
+              <li><a className = 'bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md ' href="https://drive.google.com/file/d/1_jNZNPKrMCj4XdgVHAviRhQO3RX8lrPm/view?usp=share_link" target='_blank' rel="noopener noreferrer" >Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-5 py-36'>
@@ -31,8 +31,8 @@ export default function Home() {
             <h3 className='text-black text-2xl py-2 dark:text-white'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
             <p className = 'text-gray-800 text-md py-5 leading-8 dark:text-white'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
           </div>
-          <div className='text-gray-600 text-3xl flex justify-center gap-10'>
-            <a href="https://twitter.com/alexzhaoooo" target = "_blank"><AiFillTwitterCircle/></a>
+          <div className='text-gray-600 text-3xl flex justify-center gap-10 -mt-36 '>
+            <a href="https://twitter.com/alexzhaoooo" target = "_blank" className='transition-opacity delay-150 hover:opacity-70'><AiFillTwitterCircle/></a>
             <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank"><AiFillInstagram/></a>
             <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target = "_blank" ><AiFillLinkedin/></a>
           </div>
