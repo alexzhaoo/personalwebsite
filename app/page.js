@@ -32,9 +32,9 @@ export default function Home() {
             <p className = 'text-gray-800 text-md py-5 leading-8 '>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
           </div>
           <div className='text-gray-600 text-3xl flex justify-center gap-10'>
-            <AiFillTwitterCircle/>
-            <AiFillInstagram/>
-            <AiFillLinkedin/>
+            <a href="https://twitter.com/alexzhaoooo" target = "_blank"><AiFillTwitterCircle/></a>
+            <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank"><AiFillInstagram/></a>
+            <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target = "_blank" ><AiFillLinkedin/></a>
           </div>
           <div className='mx-auto my-10 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-72 h-50 overflow-hidden '>
           <Image
@@ -45,7 +45,7 @@ export default function Home() {
         </section>
         <section className="min-h-screen text-center">
           <div className='text-black '>
-            <h3 className='-mt-24 text-3xl py-1 text-center'>My Journey as a Developer</h3>
+            <h3 className=' text-3xl py-1 text-center'>My Journey as a Developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800'> A <span className='text-teal-500'> blurb</span> this is how u highlight text btw about experience, and projects , and school.</p>
           </div>
           <div>
