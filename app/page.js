@@ -32,9 +32,15 @@ export default function Home() {
             <p className = 'text-gray-800 text-md py-5 leading-8 dark:text-white'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
           </div>
           <div className='text-gray-600 text-3xl flex justify-center gap-10 -mt-36 '>
-            <a href="https://twitter.com/alexzhaoooo" target = "_blank" className='transition-opacity delay-150 hover:opacity-70'><AiFillTwitterCircle/></a>
-            <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank"><AiFillInstagram/></a>
-            <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target = "_blank" ><AiFillLinkedin/></a>
+            <a href="https://twitter.com/alexzhaoooo" target="_blank" className="transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1">
+            <AiFillTwitterCircle className="text-blue-400 hover:rounded-full hover:shadow hover:shadow-blue-500" />
+            </a>        
+            <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank"className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
+            <AiFillInstagram className='hover:shadow hover:shadow-purple-500 hover:rounded-xl text-purple-500'/>
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target = "_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1' >
+            <AiFillLinkedin className='hover:shadow hover:shadow-blue-700 rounded-md text-blue-700'/>
+            </a>
           </div>
           <div className='mx-auto my-10 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-72 h-50 overflow-hidden '>
           <Image
