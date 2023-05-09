@@ -1,3 +1,5 @@
+const { Bebas_Neue } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 
@@ -10,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        burton:"burtons"
+        burton:"burtons",
+        Bebas_Neue:"beba"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
