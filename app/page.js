@@ -33,6 +33,8 @@ function Home() {
 }, []);
 
   const navbarBackground = scrollPosition > 1050 ? 'bg-cyan-800' : '';
+  const navbarBackground2 = scrollPosition > 1050 ? 'bg-cyan-800' : '';
+  const navbarBackground3 = scrollPosition > 1050 ? 'bg-cyan-800' : '';
   const[darkMode, setDarkMode] = useState(false); 
   const darken = darkMode ? "dark": ""
 
@@ -47,7 +49,7 @@ function Home() {
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#ffffff"/>
      </Head>
-      <nav className={`py-7 flex justify-between w-full fixed transition-colors ${navbarBackground} ${darken} z-20`}> 
+      <nav className={`hidden py-7 md:flex justify-between w-full fixed transition-colors ${navbarBackground} ${darken} z-20`}> 
         <ul className='flex items-center ml-auto'>
           <li>
           <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-black dark:text-white mr-8 hover:-translate-y-1' />
@@ -71,9 +73,9 @@ function Home() {
       </nav>  
         <main className='bg-gray-300  dark:bg-gray-800'>
           <section className='relative'>
-            <h2 className='text-orange-100 font-Bebas_Neue font-bold text-8xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40  text-center z-10 max-w-8xl'>Alexander Zhao </h2>
+            <h2 className='text-orange-100 font-Bebas_Neue font-bold text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40 text-center z-10 md:text-5xl xl:text-7xl'>Alexander Zhao </h2>
             <h3 className='text-orange-100 font-burton text-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-medium text-center z-10'>My Portfolio</h3>
-            <Image src = {home2} className='w-full h-auto block'/>
+            <Image src = {home2} className='w-full h-825 md:h-auto block' />
           </section>
           <section className="min-h-screen">    
             <div className='text-center p-5 py-36'>

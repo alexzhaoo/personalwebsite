@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height:{
+      "825" : "825px"
+    },
       fontFamily:{
         burton:"burtons",
         Bebas_Neue:"beba"
