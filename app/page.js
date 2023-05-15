@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import design from "../app/design.png"
 import home from "../public/home.jpg"
 import home2 from "../public/option2.jpg"
+import toronto from "../public/homeey.jpg"
 
 
 function Home() {
@@ -41,7 +42,7 @@ function Home() {
   }
 
 
-  const navbarBackground =  scrollPosition > imageHeight ? 'bg-cyan-800' : '';
+  const navbarBackground =  scrollPosition > imageHeight ? 'bg-gradient-to-l from-purple-300 to-teal-500 ' : '';
 
 
   const[darkMode, setDarkMode] = useState(false); 
@@ -82,22 +83,20 @@ function Home() {
       </nav>  
         <main className='bg-gray-300  dark:bg-gray-800'>
           <section className='relative'>
-            <h2 className='text-orange-100 font-Bebas_Neue font-bold text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40 text-center z-10 md:text-5xl xl:text-7xl'>Alexander Zhao </h2>
-            <h3 className='text-orange-100 font-burton text-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-medium text-center z-10'>My Portfolio</h3>
+            <h2 className='text-white font-Bebas_Neue font-bold text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40 text-center z-10 md:text-5xl xl:text-7xl'>Alexander Zhao </h2>
+            <h3 className='text-white font-burton text-xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center z-10'>My Portfolio</h3>
             <div className='image-container'>
-            <Image id='yes' src = {home2} className='w-full h-825 md:h-auto block' />
+            <Image id='yes' src = {toronto} className='w-full h-825 md:h-auto block' />
             </div>
           </section>
-          <section className="min-h-screen">
-          <div className='text-justify rounded max-w-2xl'>
-            <div className='p-5 py-28'>
-            <h3 className='text-black text-2xl py-2 dark:text-white'>Fullstack and Machine Learning Developer </h3>
-            <p className = 'text-gray-800 text-md py-5 leading-8 dark:text-white whitespace-normal block '>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
-            </div>
-          </div> 
+          <section className="min-h-screen bg-gradient-to-l from-blue-900 to-white">
+          <div className='text-center p-5 py-40'>
+            <h3 className='text-black text-2xl py-2 dark:text-white '>Fullstack and Machine Learning Developer | Computer Science Student</h3>
+            <p className = 'text-gray-800 text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
+          </div>
           <div>
               <div className='text-gray-600 text-3xl flex justify-center gap-10 -mt-36'>      
-              <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank"className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
+              <a href="https://www.instagram.com/alexzhaoooo/" target = "_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
               <AiFillInstagram className='hover:shadow hover:shadow-black hover:rounded-xl text-gray-500 dark:text-pink-400'/>
               </a>
               <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target = "_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1' >
@@ -117,7 +116,7 @@ function Home() {
           </section>
           <section className="min-h-screen text-center">
             <div className='text-black '>
-              <h3 className=' text-3xl py-1 text-center dark:text-white'>My Journey as a Developer</h3>
+            <h3 className="text-3xl py-20 text-center dark:text-white">Projects</h3>
               <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'> A <span className='text-teal-500'> blurb</span> this is how u highlight text btw about experience, and projects , and school.</p>
             </div>
             <div>

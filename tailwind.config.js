@@ -14,6 +14,9 @@ module.exports = {
       height:{
       "825" : "825px"
     },
+    margin:{
+      "140" : "800px"
+    },
       fontFamily:{
         burton:"burtons",
         Bebas_Neue:"beba"
