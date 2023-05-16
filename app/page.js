@@ -9,6 +9,7 @@ import design from "../app/design.png"
 import home from "../public/home.jpg"
 import home2 from "../public/option2.jpg"
 import toronto from "../public/homeey.jpg"
+import me from "../public/me.jpg"
 
 
 function Home() {
@@ -101,7 +102,7 @@ function Home() {
               </p>
           </div>
           <div>
-            <div className='text-gray-600 text-3xl flex justify-center gap-10 -mt-36'>
+            <div className='text-gray-600 text-3xl flex justify-center gap-10 -mt-40'>
               <a href="https://www.instagram.com/alexzhaoooo/" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
                 <AiFillInstagram className='hover:shadow hover:shadow-black hover:rounded-xl text-gray-500 dark:text-pink-400' />
               </a>
@@ -113,9 +114,9 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className='mx-auto my-10 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-72 h-50 overflow-hidden '>
+          <div className='mx-auto my-7 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-80 h-80 overflow-hidden '>
             <Image
-              src={intro}
+              src={me}
               alt='Image'
               className='mr-8' />
           </div>
