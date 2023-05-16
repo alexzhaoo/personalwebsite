@@ -12,10 +12,11 @@ module.exports = {
   theme: {
     extend: {
       height:{
-      "825" : "825px"
+      "825" : "825px",
+      "1150" : "1150px"
     },
     margin:{
-      "140" : "800px"
+      "800" : "800px"
     },
       fontFamily:{
         burton:"burtons",
