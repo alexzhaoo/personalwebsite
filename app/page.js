@@ -125,12 +125,9 @@ function Home() {
           <div className='text-black '>
             <h3 className="text-5xl mt-20 text-center dark:text-white">Projects</h3>
             <p className='mt-5'>"The best way to predict the future is to create it." - Peter Drucker</p>
-            <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'> A <span className='text-teal-500'> blurb</span> this is how u highlight text btw about experience, and projects , and school.</p>
           </div>
-          <div>
-            <div>
-              <Image src={design} width={100} height={100} />
-            </div>
+          <div className='max-w-xl shadow-md'>
+          <p></p>
           </div>
         </section>
       </main>
