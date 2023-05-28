@@ -87,12 +87,12 @@ function Home() {
           <h2 className='text-white font-Bebas_Neue font-bold text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40 text-center z-10 md:text-5xl xl:text-7xl'>Alexander Zhao </h2>
           <h3 className='text-white font-burton text-xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center z-10'>My Portfolio</h3>
           <div className='image-container'>
-            <Image id='yes' src={toronto} className='w-full h-825 md:h-auto block' />
+            <Image id='yes' src={toronto} className='w-full md:h-auto block' />
           </div>
         </section>
         <section className="h-1150 bg-zinc-200 dark:bg-gray-800">
           <div className='text-center p-5 py-40'>
-            <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-4xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
+            <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
             <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold'>About Me</h3>
             <p className='text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
             <h3 style={{ borderBottom: '2px solid gray' }} className='mt-2 text-xl max-w-md mx-auto text-black font-semibold'>Details</h3>
@@ -121,17 +121,63 @@ function Home() {
               className='mr-8' />
           </div>
         </section>
-        <section className="min-h-screen text-center">
-          <div className='text-black '>
+        <section className="min-h-screen"> 
+          <div className='text-black text-center '>
             <h3 className="text-5xl mt-20 text-center dark:text-white">Projects</h3>
             <p className='mt-5'>"The best way to predict the future is to create it." - Peter Drucker</p>
-            <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'> A <span className='text-teal-500'> blurb</span> this is how u highlight text btw about experience, and projects , and school.</p>
           </div>
-          <div>
-            <div>
-              <Image src={design} width={100} height={100} />
-            </div>
+
+          <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md'>
+          <div className='flex justify-center'>
+            <Image src={design} width={100} height={100} />
           </div>
+          <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+          <p className='py-2'>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            when an unknown printer took a galley of type and scrambled it to make a t
+          </p>
+          <div className='flex justify-center'>
+            <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+              <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+            </a>
+          </div>
+        </div>
+        <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md'>
+        <div className='flex justify-center'>
+          <Image src={design} width={100} height={100} />
+        </div>
+        <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+        <p className='py-2'>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          when an unknown printer took a galley of type and scrambled it to make a t
+        </p>
+        <div className='flex justify-center'>
+          <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+            <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+          </a>
+        </div>
+      </div>
+      <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md'>
+      <div className='flex justify-center'>
+        <Image src={design} width={100} height={100} />
+      </div>
+      <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+      <p className='py-2'>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        when an unknown printer took a galley of type and scrambled it to make a t
+      </p>
+      <div className='flex justify-center'>
+        <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+          <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+        </a>
+      </div>
+    </div>
+          
+        
+      
+        
+        
+          
         </section>
       </main>
 
