@@ -90,8 +90,8 @@ function Home() {
             <Image id='yes' src={toronto} className='w-full md:h-auto block' />
           </div>
         </section>
-        <section className="h-1150 bg-zinc-200 dark:bg-gray-800">
-          <div className='text-center p-5 py-40'>
+        <section className="h-700 bg-zinc-200 dark:bg-gray-800 flex justify-center">
+          <div className='text-center p-5 py-20 mx-auto'>
             <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
             <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold'>About Me</h3>
             <p className='text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
@@ -100,9 +100,7 @@ function Home() {
                 Location: Toronto<br />
                 Age: 19
               </p>
-          </div>
-          <div>
-            <div className='text-gray-600 text-3xl flex justify-center gap-10 -mt-40'>
+              <div className='text-gray-600 text-3xl flex justify-center gap-10'>
               <a href="https://www.instagram.com/alexzhaoooo/" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
                 <AiFillInstagram className='hover:shadow hover:shadow-black hover:rounded-xl text-gray-500 dark:text-pink-400' />
               </a>
@@ -114,20 +112,54 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className='mx-auto my-7 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-80 h-80 overflow-hidden '>
+          <div>
+          </div>
+          <div className='mx-auto mt-40 my-7 mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-96 h-96 overflow-hidden '>
             <Image
               src={me}
               alt='Image'
               className='mr-8' />
           </div>
+          
         </section>
-        <section className="min-h-screen"> 
+        <section className="h-700"> 
           <div className='text-black text-center '>
-            <h3 className="text-5xl mt-20 text-center dark:text-white">Projects</h3>
-            <p className='mt-5'>"The best way to predict the future is to create it." - Peter Drucker</p>
+            <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl mt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
+            <p className='mt-5 mx-auto font-semibold text-sm'>"The best way to predict the future is to create it."</p>
+            <p className='mt-1 mx-auto font-semibold text-sm' >- Peter Drucker</p>
           </div>
-
-          <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md'>
+        <div className='flex flex-wrap  justify-center gap-10 '>
+            <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl'>
+              <div className='flex justify-center'>
+                <Image src={design} width={100} height={100} />
+              </div>
+              <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+              <p className='py-2'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                when an unknown printer took a galley of type and scrambled it to make a t
+              </p>
+              <div className='flex justify-center'>
+                <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+                  <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+                </a>
+            </div>
+          </div>
+          <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl'>
+            <div className='flex justify-center'>
+              <Image src={design} width={100} height={100} />
+            </div>
+            <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+            <p className='py-2'>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              when an unknown printer took a galley of type and scrambled it to make a t
+            </p>
+            <div className='flex justify-center'>
+              <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+                <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+              </a>
+            </div>
+        </div>
+        <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl'>
           <div className='flex justify-center'>
             <Image src={design} width={100} height={100} />
           </div>
@@ -141,43 +173,11 @@ function Home() {
               <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
             </a>
           </div>
-        </div>
-        <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md'>
-        <div className='flex justify-center'>
-          <Image src={design} width={100} height={100} />
-        </div>
-        <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
-        <p className='py-2'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          when an unknown printer took a galley of type and scrambled it to make a t
-        </p>
-        <div className='flex justify-center'>
-          <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
-            <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
-          </a>
-        </div>
-      </div>
-      <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md'>
-      <div className='flex justify-center'>
-        <Image src={design} width={100} height={100} />
-      </div>
-      <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
-      <p className='py-2'>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        when an unknown printer took a galley of type and scrambled it to make a t
-      </p>
-      <div className='flex justify-center'>
-        <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
-          <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
-        </a>
       </div>
     </div>
-          
-        
-      
-        
-        
-          
+        </section>
+        <section className='min-h-screen bg-gradient-to-l from-purple-300 to-teal-500 '>
+
         </section>
       </main>
 
