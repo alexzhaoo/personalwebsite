@@ -42,6 +42,14 @@ function Home() {
     }
   }
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+
 
   const navbarBackground = scrollPosition > imageHeight ? 'bg-gradient-to-l from-purple-300 to-teal-500 ' : '';
   const navbarColor = scrollPosition > imageHeight ? 'text-black' : '';
@@ -65,8 +73,8 @@ function Home() {
           <li>
             <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-black dark:text-white mr-8 hover:-translate-y-1' />
           </li>
-          <li className=' mx-5 hover:-translate-y-1'>
-            <a href="#top">Home</a>
+          <li className=' mx-5 hover:-translate-y-1' onClick={scrollToTop}>
+            <a> Home</a>
           </li>
           <li className=' mx-5 hover:-translate-y-1'>
             <a >About</a>
@@ -114,7 +122,7 @@ function Home() {
           </div>
           <div>
           </div>
-          <div className='mx-auto mt-40 my-7 mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-96 h-96 overflow-hidden '>
+          <div className='mx-auto mt-36 my-7 mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-450 h-450 overflow-hidden '>
             <Image
               src={me}
               alt='Image'

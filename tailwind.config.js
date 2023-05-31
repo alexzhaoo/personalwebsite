@@ -12,10 +12,14 @@ module.exports = {
   theme: {
     extend: {
       height:{
+      "450": "450px",
       "700" : "700px",
       "825" : "825px",
       "1150" : "1150px"
     },
+      width:{
+        "450": "450px"
+      },
     margin:{
       "800" : "800px"
     },
