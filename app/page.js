@@ -33,7 +33,11 @@ function Home() {
     };
   }, []);
 
+
   let imageHeight = 0;
+
+  var clientHeight = document.getElementById('no').clientHeight;
+
 
   if (typeof window !== 'undefined') {
     const img = document.getElementById('yes');
@@ -49,6 +53,21 @@ function Home() {
     });
   }
 
+  function scrollToAbout(){
+    window.scrollTo({
+      top: imageHeight,
+      behavior: 'smooth'
+    });
+  }
+
+  function scrollToProject(){
+    window.scrollTo({
+      top: clientHeight + imageHeight -100,
+      behavior: 'smooth'
+    });
+  }
+
+
 
 
   const navbarBackground = scrollPosition > imageHeight ? 'bg-gradient-to-l from-purple-300 to-teal-500 ' : '';
@@ -56,6 +75,7 @@ function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
   const darken = darkMode ? "dark" : ""
+
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -76,10 +96,10 @@ function Home() {
           <li className=' mx-5 hover:-translate-y-1' onClick={scrollToTop}>
             <a> Home</a>
           </li>
-          <li className=' mx-5 hover:-translate-y-1'>
+          <li className=' mx-5 hover:-translate-y-1' onClick={scrollToAbout}>
             <a >About</a>
           </li>
-          <li className='mx-5 hover:-translate-y-1'>
+          <li className='mx-5 hover:-translate-y-1' onClick={scrollToProject}>
             <a>Projects</a>
           </li>
           <li className='mx-5 hover:-translate-y-1'>
@@ -98,38 +118,39 @@ function Home() {
             <Image id='yes' src={toronto} className='w-full md:h-auto block' />
           </div>
         </section>
-        <section className="h-700 bg-zinc-200 dark:bg-gray-800 flex justify-center">
-          <div className='text-center p-5 py-20 mx-auto'>
-            <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
-            <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold'>About Me</h3>
-            <p className='text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
-            <h3 style={{ borderBottom: '2px solid gray' }} className='mt-2 text-xl max-w-md mx-auto text-black font-semibold'>Details</h3>
-            <p className="text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto" style={{ display: 'flex', flexDirection: 'column' }}>
-                Location: Toronto<br />
-                Age: 19
-              </p>
-              <div className='text-gray-600 text-3xl flex justify-center gap-10'>
-              <a href="https://www.instagram.com/alexzhaoooo/" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
-                <AiFillInstagram className='hover:shadow hover:shadow-black hover:rounded-xl text-gray-500 dark:text-pink-400' />
-              </a>
-              <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1' >
-                <AiFillLinkedin className='hover:shadow hover:shadow-blue-700 rounded-md text-blue-700' />
-              </a>
-              <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
-                <AiFillGithub className=' text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
-              </a>
-            </div>
+        <section id='no' className="min-h-screen bg-zinc-200 dark:bg-gray-800 flex flex-col justify-center items-center  md:flex-row sm:flex-row">
+        <div className='text-center p-5 py-20 mx-auto md:ml-96 sm:ml-96'>
+          <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
+          <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold'>About Me</h3>
+          <p className='text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
+          <h3 style={{ borderBottom: '2px solid gray' }} className='mt-2 text-xl max-w-md mx-auto text-black font-semibold'>Details</h3>
+          <p className="text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto" style={{ display: 'flex', flexDirection: 'column' }}>
+            Location: Toronto<br />
+            Age: 19
+          </p>
+          <div className='text-gray-600 text-3xl flex justify-center gap-10'>
+            <a href="https://www.instagram.com/alexzhaoooo/" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
+              <AiFillInstagram className='hover:shadow hover:shadow-black hover:rounded-xl text-gray-500 dark:text-pink-400' />
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-zhao-926225211/" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1' >
+              <AiFillLinkedin className='hover:shadow hover:shadow-blue-700 rounded-md text-blue-700' />
+            </a>
+            <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 '>
+              <AiFillGithub className=' text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+            </a>
           </div>
-          <div>
-          </div>
-          <div className='mx-auto mt-36 my-7 mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-450 h-450 overflow-hidden '>
+        </div>
+        <div className='mt-8 md:mt-0 sm:mt-0'>
+          <div className='mx-auto mb-7 sm:mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-450 h-450 overflow-hidden '>
             <Image
               src={me}
               alt='Image'
-              className='mr-8' />
+              className='mr-8'
+            />
           </div>
-          
-        </section>
+        </div>
+      </section>
+      
         <section className="h-700"> 
           <div className='text-black text-center '>
             <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl mt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
