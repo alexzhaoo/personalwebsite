@@ -12,6 +12,7 @@ import toronto from "../public/homeey.jpg"
 import me from "../public/me.jpg"
 
 
+
 function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
@@ -36,7 +37,7 @@ function Home() {
 
   let imageHeight = 0;
 
-  var clientHeight = document.getElementById('no').clientHeight;
+  let clientHeight = 0;
 
 
   if (typeof window !== 'undefined') {
@@ -45,6 +46,14 @@ function Home() {
       imageHeight = img.clientHeight;
     }
   }
+
+  if (typeof window !== 'undefined') {
+    const img = document.getElementById('no');
+    if (img) {
+      clientHeight = img.clientHeight;
+    }
+  }
+
 
   function scrollToTop() {
     window.scrollTo({
@@ -115,7 +124,7 @@ function Home() {
           <h2 className='text-white font-Bebas_Neue font-bold text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40 text-center z-10 md:text-5xl xl:text-7xl'>Alexander Zhao </h2>
           <h3 className='text-white font-burton text-xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center z-10'>My Portfolio</h3>
           <div className='image-container'>
-            <Image id='yes' src={toronto} className='w-full md:h-auto block' />
+            <Image id='yes' src={home} className='w-full md:h-auto block' />
           </div>
         </section>
         <section id='no' className="min-h-screen bg-zinc-200 dark:bg-gray-800 flex flex-col justify-center items-center  md:flex-row sm:flex-row">
@@ -206,7 +215,7 @@ function Home() {
     </div>
         </section>
         <section className='min-h-screen bg-gradient-to-l from-purple-300 to-teal-500 '>
-
+        <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl mt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
         </section>
       </main>
 
