@@ -10,8 +10,7 @@ import home from "../public/home.jpg"
 import home2 from "../public/option2.jpg"
 import toronto from "../public/homeey.jpg"
 import me from "../public/me.jpg"
-
-
+import homepage from "../public/homepage.jpg"
 
 function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -71,7 +70,7 @@ function Home() {
 
   function scrollToProject(){
     window.scrollTo({
-      top: clientHeight + imageHeight -100,
+      top: clientHeight + imageHeight -50 ,
       behavior: 'smooth'
     });
   }
@@ -97,7 +96,7 @@ function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <nav className={`hidden py-7 md:flex justify-between w-full fixed transition-colors ${navbarBackground} ${navbarColor} ${darken} z-20`}>
+      <nav className={`hidden py-7 md:flex justify-between w-full fixed transition-colors ${navbarBackground} ${navbarColor} ${darken} z-20 `}>
         <ul className={'flex items-center ml-auto'}>
           <li>
             <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-black dark:text-white mr-8 hover:-translate-y-1' />
@@ -112,27 +111,24 @@ function Home() {
             <a>Projects</a>
           </li>
           <li className='mx-5 hover:-translate-y-1'>
-            <a>MakerSpace</a>
-          </li>
-          <li className='mx-5 hover:-translate-y-1'>
             <a className='bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md' href="https://drive.google.com/file/d/1_jNZNPKrMCj4XdgVHAviRhQO3RX8lrPm/view?usp=share_link" target='_blank' rel="noopener noreferrer" >Resume</a>
           </li>
         </ul>
       </nav>
-      <main className='bg-gray-300  dark:bg-gray-800'>
-        <section className='relative'>
+      <main className=''>
+        <section className='relative bg-gray-300'>
           <h2 className='text-white font-Bebas_Neue font-bold text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-40 text-center z-10 md:text-5xl xl:text-7xl'>Alexander Zhao </h2>
           <h3 className='text-white font-burton text-xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center z-10'>My Portfolio</h3>
-          <div className='image-container'>
-            <Image id='yes' src={home} className='w-full md:h-auto block' />
+          <div className= 'bg-cover bg-fixed bg-center bg-no-repeat'>
+          <Image id='yes' src={homepage} className='w-full md:h-auto block' />
           </div>
         </section>
         <section id='no' className="min-h-screen bg-zinc-200 dark:bg-gray-800 flex flex-col justify-center items-center  md:flex-row sm:flex-row">
         <div className='text-center p-5 py-20 mx-auto md:ml-96 sm:ml-96'>
           <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
-          <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold'>About Me</h3>
+          <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold dark:text-white'>About Me</h3>
           <p className='text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
-          <h3 style={{ borderBottom: '2px solid gray' }} className='mt-2 text-xl max-w-md mx-auto text-black font-semibold'>Details</h3>
+          <h3 style={{ borderBottom: '2px solid gray' }} className='mt-2 text-xl max-w-md mx-auto text-black font-semibold dark:text-white'>Details</h3>
           <p className="text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto" style={{ display: 'flex', flexDirection: 'column' }}>
             Location: Toronto<br />
             Age: 19
@@ -159,15 +155,59 @@ function Home() {
           </div>
         </div>
       </section>
-      
-        <section className="h-700"> 
+        <section className="min-h-screen bg-gray-300 dark:bg-gray-700"> 
           <div className='text-black text-center '>
-            <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl mt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
-            <p className='mt-5 mx-auto font-semibold text-sm'>"The best way to predict the future is to create it."</p>
-            <p className='mt-1 mx-auto font-semibold text-sm' >- Peter Drucker</p>
+            <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl pt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
+            <p className='mt-5 mx-auto font-semibold text-sm dark:text-white'>"The best way to predict the future is to create it."</p>
+            <p className='mt-1 mx-auto font-semibold text-sm dark:text-white' >- Peter Drucker</p>
           </div>
-        <div className='flex flex-wrap  justify-center gap-10 '>
-            <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl'>
+            <div className='flex flex-wrap  justify-center gap-10 '>
+              <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
+                <div className='flex justify-center'>
+                  <Image src={design} width={100} height={100} />
+                </div>
+            <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+            <p className='py-2'>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              when an unknown printer took a galley of type and scrambled it to make a t
+            </p>
+            <div className='flex justify-center'>
+              <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+                <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+              </a>
+          </div>
+        </div>
+        <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
+          <div className='flex justify-center'>
+            <Image src={design} width={100} height={100} />
+          </div>
+          <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+          <p className='py-2'>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            when an unknown printer took a galley of type and scrambled it to make a t
+          </p>
+          <div className='flex justify-center'>
+            <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+              <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+            </a>
+          </div>
+      </div>
+      <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
+        <div className='flex justify-center'>
+          <Image src={design} width={100} height={100} />
+        </div>
+        <h3 className='text-lg font-bold pt-8 pb-2'>Project Name</h3>
+        <p className='py-2'>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          when an unknown printer took a galley of type and scrambled it to make a t
+        </p>
+        <div className='flex justify-center'>
+          <a href="https://github.com/alexzhaoo" target="_blank" className='transition-opacity delay-100 hover:opacity-90 hover:-translate-y-1 text-3xl'>
+            <AiFillGithub className='text-black hover:shadow hover:shadow-black rounded-full dark:text-white' />
+          </a>
+        </div>
+    </div>
+            <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
               <div className='flex justify-center'>
                 <Image src={design} width={100} height={100} />
               </div>
@@ -182,7 +222,7 @@ function Home() {
                 </a>
             </div>
           </div>
-          <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl'>
+          <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
             <div className='flex justify-center'>
               <Image src={design} width={100} height={100} />
             </div>
@@ -197,7 +237,7 @@ function Home() {
               </a>
             </div>
         </div>
-        <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl'>
+        <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
           <div className='flex justify-center'>
             <Image src={design} width={100} height={100} />
           </div>
@@ -213,9 +253,6 @@ function Home() {
           </div>
       </div>
     </div>
-        </section>
-        <section className='min-h-screen bg-gradient-to-l from-purple-300 to-teal-500 '>
-        <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl mt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
         </section>
       </main>
 

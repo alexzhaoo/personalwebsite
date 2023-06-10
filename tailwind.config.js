@@ -1,4 +1,5 @@
 const { Bebas_Neue } = require('next/font/google');
+const path = require('path');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
