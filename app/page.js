@@ -123,7 +123,8 @@ function Home() {
           <Image id='yes' src={homepage} className='w-full md:h-auto block' />
           </div>
         </section>
-        <section id='no' className="min-h-screen bg-zinc-200 dark:bg-gray-800 flex flex-col justify-center items-center  md:flex-row sm:flex-row">
+        <section id='no' className="min-h-screen bg-zinc-50 dark:bg-gray-800 flex flex-col justify-center items-center  md:flex-row sm:flex-row">
+        
         <div className='text-center p-5 py-20 mx-auto md:ml-96 sm:ml-96'>
           <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
           <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold dark:text-white'>About Me</h3>
@@ -155,9 +156,17 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className = "h-1150 bg-orange-50 dark:bg-gray-700">
+        <div className='text-black text-center'>
+        <h3 className='text-5xl pt-10 text-teal-500'>Experiences</h3>
+        </div>
+      </section>
+
+
         <section className="min-h-screen bg-gray-300 dark:bg-gray-700"> 
           <div className='text-black text-center '>
-            <h3  style={{ borderBottom: '2px solid gray' }} className="text-3xl pt-10 text-center dark:text-white max-w-md mx-auto font-semibold">Projects</h3>
+            <h3  className="text-4xl pt-10 ">Projects</h3>
             <p className='mt-5 mx-auto font-semibold text-sm dark:text-white'>"The best way to predict the future is to create it."</p>
             <p className='mt-1 mx-auto font-semibold text-sm dark:text-white' >- Peter Drucker</p>
           </div>
