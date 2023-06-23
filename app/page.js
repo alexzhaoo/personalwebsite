@@ -157,18 +157,42 @@ function Home() {
         </div>
       </section>
 
-      <section className = "h-1150 bg-orange-50 dark:bg-gray-700">
-        <div className='text-black text-center'>
-        <h3 className='text-5xl pt-10 text-teal-500'>Experiences</h3>
+      
+      <section className="h-1150 bg-orange-50 dark:bg-gray-700">
+      <div className="text-stone-950 text-center">
+        <h3 className="text-5xl pt-10 text-teal-500 font-semibold">Experiences</h3>
+        <p className="mt-5 font-light">"Experience gives us the tests first and the lessons later"</p>
+        <p className="mt-1 font-light">- Naomi Judd</p>
+        <p style={{ borderBottom: '1px solid gray' }} className="text-orange-50 max-w-3xl mx-auto mt-10">    </p>
+      </div>
+      <div className="text-center text-black">
+        <h3 className="mt-5 text-teal-500 text-3xl -ml-630 font-light">Education</h3>
+        <div className="flex justify-center">
+          <div className="py-5 text-zinc-900">
+            <p className='font-semibold ml-32'>Toronto Montessori School</p>
+            <p className='text-xs mt-4 ml-22spec'>September 2016 - May 2022</p>
+            <p className='mt-10 font-semibold ml-32'>Queen's University</p>
+            <p className='text-xs mt-4 ml-22spec'>September 2022 - Present</p>
+          </div>
+          <div className="mx-2 py-5 ml-24">
+            <p className='font-semibold text-sm '>Ontario Secondary School Diploma || International Baccalaureate Program Diploma</p>
+            <p className='text-sm font-light '> I finished my last two years of middle school and 4 years of high school at TMS.</p>
+            <p className='text-sm font-light mr-8'> During my last 2 years of high school I participated in the IB DP Programme, where  </p>
+            <p className='text-sm font-light '> I enrolled in higher level Math, Physics and Economics. Completed an extended essay, </p>
+            <p className='text-sm font-light '> and multiple individual assesments. </p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
+    
 
 
         <section className="min-h-screen bg-gray-300 dark:bg-gray-700"> 
           <div className='text-black text-center '>
-            <h3  className="text-4xl pt-10 ">Projects</h3>
-            <p className='mt-5 mx-auto font-semibold text-sm dark:text-white'>"The best way to predict the future is to create it."</p>
-            <p className='mt-1 mx-auto font-semibold text-sm dark:text-white' >- Peter Drucker</p>
+            <h3  className="text-4xl pt-10 text-teal-500">Projects</h3>
+            <p className='mt-5 mx-auto  text-sm dark:text-white'>"The best way to predict the future is to create it."</p>
+            <p className='mt-1 mx-auto  text-sm dark:text-white' >- Peter Drucker</p>
           </div>
             <div className='flex flex-wrap  justify-center gap-10 '>
               <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
