@@ -78,8 +78,8 @@ function Home() {
 
 
 
-  const navbarBackground = scrollPosition > imageHeight ? 'bg-gradient-to-l from-purple-300 to-teal-500 ' : '';
-  const navbarColor = scrollPosition > imageHeight ? 'text-black' : '';
+  const navbarBackground = scrollPosition > imageHeight ? 'bg-neutral-700 ' : '';
+  const navbarColor = scrollPosition > imageHeight ? 'text-white' : '';
 
   const [darkMode, setDarkMode] = useState(false);
   const darken = darkMode ? "dark" : ""
@@ -171,11 +171,11 @@ function Home() {
           <div className="py-5 text-zinc-900">
             <p className='font-semibold '>Toronto Montessori School</p>
             <p className='text-xs mt-4 '>September 2016 - May 2022</p> 
-            <p className='mt-28 font-semibold md:mt-16'>Queen's University</p>
+            <p className='mt-20 font-semibold md:mt-12'>Queen's University</p>
             <p className='text-xs mt-4 '>September 2022 - Present</p>
           </div>
           <div className="mx-2 py-5 ml-24">
-            <p className='font-semibold text-sm '>Ontario Secondary School Diploma || International Baccalaureate Program Diploma</p>
+            <p className='font-semibold text-sm '>International Baccalaureate Program Diploma</p>
             <p className='text-sm font-light '> I finished my last two years of middle school and 4 years of high school at TMS. During my last 2 years of</p>
             <p className='text-sm font-light '> high school I participated in the IB DP Programme, where I enrolled in higher level Math, Physics</p>
             <p className='text-sm font-light '> and Economics. Completed an extended essay, and multiple individual assesments.  </p>
@@ -189,24 +189,29 @@ function Home() {
       </div>
       <p style={{ borderBottom: '1px solid gray' }} className="text-orange-50 max-w-6xl mx-auto mt-10">    </p>
       <div className="text-center text-black">
-      <h3 className="mt-5 text-teal-500 text-3xl font-light md:-ml-800">Careers</h3>
+      <h3 className="mt-5 text-teal-500 text-3xl font-light md:-ml-875">Careers</h3>
       <div className="flex justify-center">
         <div className="py-5 text-zinc-900">
           <p className='font-semibold '>QMIND</p>
           <p className='text-xs mt-4 '>September 2022 - April 2023</p> 
-          <p className='mt-28 font-semibold md:mt-16'>QHACKS</p>
+          <p className='mt-130 font-semibold md:mt-12'>QHACKS</p>
           <p className='text-xs mt-4 '>September 2023 - April 2023</p>
+          <p className='mt-24 font-semibold md:mt-12'>Triway Education</p>
+          <p className='text-xs mt-4 '>May 2023 - August 2023</p>
         </div>
         <div className="mx-2 py-5 ml-24">
           <p className='font-semibold text-sm '>Innovation Design Team Member</p>
           <p className='text-sm font-light '> At QMIND, I worked in the innovation sector with 3 teammates, on a project called "Rocket Landing".</p>
-          <p className='text-sm font-light '></p>
-          <p className='text-sm font-light '> </p>
-          <p className='text-sm font-light '>  </p>
+          <p className='text-sm font-light '> We used OpenAI Gym to set up an enviornment to train a Deep Reinforcment Learning Model. </p>
+          <p className='text-sm font-light '> To help train the model we used a Deep Q Network, along with an apprpriate reward system. </p>
           <p className='font-semibold text-sm mt-5 '>First Year Representative</p>
-          <p className='text-sm font-light '> I am currently entering my second year of studies at Queen's University for Computing. The curriculum  </p>
-          <p className='text-sm font-light '>is designed to include multiple languages such as Python, Java, and C. I also have learned different </p>
-          <p className='text-sm font-light '>developmental strategies such as the waterfall approach and agile development.</p>
+          <p className='text-sm font-light '>Working at QHACKS as a first-year representative was an amazing experience. I worked in every department, logistics, </p>
+          <p className='text-sm font-light '> technology, partnerships, operations, and marketing. Two of my largest tasks,  </p>
+          <p className='text-sm font-light '> I worked with sponsors, and utilized Discord.js to build a server for hackers.</p>
+          <p className='font-semibold text-sm mt-5 '>Python || Java || Math Tutor </p>
+          <p className='text-sm font-light '> As a tutor I prepared many lessons in advance catering to every student's personal needs. </p>
+          <p className='text-sm font-light '>Using various online resources such as coderpad, desmos, and dmoj I facilitated hands</p>
+          <p className='text-sm font-light '>on sessions were I could interact with students for a enhanced learning experience.</p>
 
         </div>
       </div>

@@ -25,6 +25,7 @@ module.exports = {
       },
     margin:{
       "22spec" : "84px",
+      "130" : "130px",
       "395" : "395px",
       "425" : "425px",
       "450" : "450px",
@@ -38,7 +39,8 @@ module.exports = {
       "680" : "680px",
       "700" : "700px",
       "750" : "750px",
-      "800" : "800px"
+      "800" : "800px",
+      "875" : "875px"
     },
       fontFamily:{
         burton:"burtons",
