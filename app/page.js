@@ -111,7 +111,7 @@ function Home() {
             <a>Projects</a>
           </li>
           <li className='mx-5 hover:-translate-y-1'>
-            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md' href="https://drive.google.com/file/d/1_jNZNPKrMCj4XdgVHAviRhQO3RX8lrPm/view?usp=share_link" target='_blank' rel="noopener noreferrer" >Resume</a>
+            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md' href="https://drive.google.com/file/d/1_jNZNPKrMCj4XdgVHAviRhQO3RX8lrPm/view?usp=sharing" target='_blank' rel="noopener noreferrer" >Resume</a>
           </li>
         </ul>
       </nav>
@@ -128,7 +128,7 @@ function Home() {
         <div className='text-center p-5 py-20 mx-auto md:ml-96 sm:ml-96'>
           <h3 style={{ borderBottom: '2px solid gray' }} className='text-black text-2xl py-2 dark:text-white font-semibold max-w-5xl mx-auto'>Fullstack and Machine Learning Developer | Computer Science Student</h3>
           <h3 style={{ borderBottom: '2px solid gray' }} className='mt-10 text-xl max-w-md mx-auto text-black font-semibold dark:text-white'>About Me</h3>
-          <p className='text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto'>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
+          <p className='text-black text-md py-5 leading-8 dark:text-white mx-auto '>I am a self-motivated second-year undergraduate student at Queen's University studying computer science with a specialization in Software Design. I am passionate about programming and am always eager to learn and try out new technologies. I have experience in developing software applications and am also interested in machine learning and data analysis.</p>
           <h3 style={{ borderBottom: '2px solid gray' }} className='mt-2 text-xl max-w-md mx-auto text-black font-semibold dark:text-white'>Details</h3>
           <p className="text-black text-md py-5 leading-8 dark:text-white max-w-2xl mx-auto" style={{ display: 'flex', flexDirection: 'column' }}>
             Location: Toronto<br />
@@ -147,7 +147,7 @@ function Home() {
           </div>
         </div>
         <div className='mt-8 md:mt-0 sm:mt-0'>
-          <div className='mx-auto mb-7 sm:mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-450 h-450 overflow-hidden '>
+          <div className='mx-auto mb-7 sm:mr-96 bg-gradient-to-b from-gray-600 to-orange-100 rounded-full w-72 h-72 overflow-hidden md:w-350 md:h-350 lg:w-450 lg:h-450'>
             <Image
               src={me}
               alt='Image'
@@ -158,31 +158,59 @@ function Home() {
       </section>
 
       
-      <section className="h-1150 bg-orange-50 dark:bg-gray-700">
+      <section className="min-h-screen bg-orange-50 dark:bg-gray-700">
       <div className="text-stone-950 text-center">
-        <h3 className="text-5xl pt-10 text-teal-500 font-semibold">Experiences</h3>
+        <h3 className="text-5xl pt-16 text-teal-500 font-semibold">Experiences</h3>
         <p className="mt-5 font-light">"Experience gives us the tests first and the lessons later"</p>
         <p className="mt-1 font-light">- Naomi Judd</p>
-        <p style={{ borderBottom: '1px solid gray' }} className="text-orange-50 max-w-3xl mx-auto mt-10">    </p>
+        <p style={{ borderBottom: '1px solid gray' }} className="text-orange-50 max-w-6xl mx-auto mt-10">    </p>
       </div>
       <div className="text-center text-black">
-        <h3 className="mt-5 text-teal-500 text-3xl -ml-630 font-light">Education</h3>
+        <h3 className="mt-5 text-teal-500 text-3xl font-light md:-ml-800">Education</h3>
         <div className="flex justify-center">
           <div className="py-5 text-zinc-900">
-            <p className='font-semibold ml-32'>Toronto Montessori School</p>
-            <p className='text-xs mt-4 ml-22spec'>September 2016 - May 2022</p>
-            <p className='mt-10 font-semibold ml-32'>Queen's University</p>
-            <p className='text-xs mt-4 ml-22spec'>September 2022 - Present</p>
+            <p className='font-semibold '>Toronto Montessori School</p>
+            <p className='text-xs mt-4 '>September 2016 - May 2022</p> 
+            <p className='mt-28 font-semibold md:mt-16'>Queen's University</p>
+            <p className='text-xs mt-4 '>September 2022 - Present</p>
           </div>
           <div className="mx-2 py-5 ml-24">
             <p className='font-semibold text-sm '>Ontario Secondary School Diploma || International Baccalaureate Program Diploma</p>
-            <p className='text-sm font-light '> I finished my last two years of middle school and 4 years of high school at TMS.</p>
-            <p className='text-sm font-light mr-8'> During my last 2 years of high school I participated in the IB DP Programme, where  </p>
-            <p className='text-sm font-light '> I enrolled in higher level Math, Physics and Economics. Completed an extended essay, </p>
-            <p className='text-sm font-light '> and multiple individual assesments. </p>
+            <p className='text-sm font-light '> I finished my last two years of middle school and 4 years of high school at TMS. During my last 2 years of</p>
+            <p className='text-sm font-light '> high school I participated in the IB DP Programme, where I enrolled in higher level Math, Physics</p>
+            <p className='text-sm font-light '> and Economics. Completed an extended essay, and multiple individual assesments.  </p>
+            <p className='font-semibold text-sm mt-5 '>Bachelor of Computing(Honours) / BCmpH</p>
+            <p className='text-sm font-light '> I am currently entering my second year of studies at Queen's University for Computing. The curriculum  </p>
+            <p className='text-sm font-light '>is designed to include multiple languages such as Python, Java, and C. I also have learned different </p>
+            <p className='text-sm font-light '>developmental strategies such as the waterfall approach and agile development.</p>
+
           </div>
         </div>
       </div>
+      <p style={{ borderBottom: '1px solid gray' }} className="text-orange-50 max-w-6xl mx-auto mt-10">    </p>
+      <div className="text-center text-black">
+      <h3 className="mt-5 text-teal-500 text-3xl font-light md:-ml-800">Careers</h3>
+      <div className="flex justify-center">
+        <div className="py-5 text-zinc-900">
+          <p className='font-semibold '>QMIND</p>
+          <p className='text-xs mt-4 '>September 2022 - April 2023</p> 
+          <p className='mt-28 font-semibold md:mt-16'>QHACKS</p>
+          <p className='text-xs mt-4 '>September 2023 - April 2023</p>
+        </div>
+        <div className="mx-2 py-5 ml-24">
+          <p className='font-semibold text-sm '>Innovation Design Team Member</p>
+          <p className='text-sm font-light '> At QMIND, I worked in the innovation sector with 3 teammates, on a project called "Rocket Landing".</p>
+          <p className='text-sm font-light '></p>
+          <p className='text-sm font-light '> </p>
+          <p className='text-sm font-light '>  </p>
+          <p className='font-semibold text-sm mt-5 '>First Year Representative</p>
+          <p className='text-sm font-light '> I am currently entering my second year of studies at Queen's University for Computing. The curriculum  </p>
+          <p className='text-sm font-light '>is designed to include multiple languages such as Python, Java, and C. I also have learned different </p>
+          <p className='text-sm font-light '>developmental strategies such as the waterfall approach and agile development.</p>
+
+        </div>
+      </div>
+    </div>
     </section>
     
     
@@ -225,7 +253,7 @@ function Home() {
             </a>
           </div>
       </div>
-      <div className='text-center text-black py-10 mt-10 shadow shadow-black rounded-md max-w-xl dark:text-white'>
+      <div className='text-center text-black py-10 mt-10 shadow rounded-md max-w-xl dark:text-white'>
         <div className='flex justify-center'>
           <Image src={design} width={100} height={100} />
         </div>
